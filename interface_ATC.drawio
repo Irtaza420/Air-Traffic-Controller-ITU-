@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-04-20T12:33:26.954Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/97.0.0.0" etag="PRLM95F7bVHaCMGfpc-x" version="21.1.9" type="device">
+  <diagram name="Page-1" id="hzr3_o0GTnqP5q6ZM96v">
+    <mxGraphModel dx="1028" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-5" value="Air Traffic Control System&lt;br&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="20" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-21" value="+void detectAircraft()&#xa;+void identifyAircraft()&#xa;+void processFlightPlan()&#xa;+void checkMeteorologicalConditions()&#xa;+void giveClearance()&#xa;+void monitorAircraft()&#xa;+void handleEmergency()&#xa;+void guideDeparture()&#xa;+void guideArrival()&#xa;+void guideTaxiing()&#xa;+void performShutdown()&#xa;+void performMaintenance()&#xa;+void standbyForEmergency()&#xa;+void initiateRescue()" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tOOe-gz5x0M7tNnGK8fA-5">
+          <mxGeometry y="30" width="340" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-9" value="Aircraft&lt;br&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="300" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-28" value="+FlightPlan getFlightPlan()" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tOOe-gz5x0M7tNnGK8fA-9">
+          <mxGeometry y="30" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-29" value="+Pilot getPilot()" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tOOe-gz5x0M7tNnGK8fA-9">
+          <mxGeometry y="70" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-31" value="+void setFlightPlan(FlightPlan flightPlan)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tOOe-gz5x0M7tNnGK8fA-9">
+          <mxGeometry y="110" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-13" value="Meteorological&lt;br&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="370" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-22" value="+WeatherData getWeatherData()" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tOOe-gz5x0M7tNnGK8fA-13">
+          <mxGeometry y="30" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-17" value="FlightPlan&lt;br&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="495" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-32" value="+void setWaypoints(ArrayList&lt;Waypoint&gt; waypoints)&#xa;ArrayList&lt;Waypoint&gt; getWaypoints()&#xa;+void addWaypoint(Waypoint w)&#xa;+void removeWaypoint(Waypoint w)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tOOe-gz5x0M7tNnGK8fA-17">
+          <mxGeometry y="30" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tOOe-gz5x0M7tNnGK8fA-30" value="&lt;div style=&quot;color: rgb(0, 0, 0); background-color: rgb(255, 255, 254); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="450" width="360" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
